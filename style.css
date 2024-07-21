@@ -1,0 +1,273 @@
+/*nhewso fi google 3la poppins font w ndiro select this style puis import puis copier wnjo hna wndiro coller*/
++{ /*5min:30s*/
+    /*+ m3ntha all elements li kaynin f la page*/
+    font-family: 'poppins' , 'sans-serif';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* el te3dilat 3la l itar tkon fi 7odod border par default*/
+    scroll-behavior: smooth; /* يغير اداء سكرولينغ على الصفحة هاديك لي تطلع و تهود بيها لباجا لي تجي علا ليمنا فلقنت*/
+
+}
+
+header {
+
+    background-color: #f0f0f0;
+    width: 100%;
+    position: fixed; /* شفت مين تهود بالسكرول نورمالمون المحتوى header هادي الاداة هي لي تفيكسيلنا المحتوى تاع 
+                    يختفي  بصح هادي الاداة متخليهش يختفي مهما هودنا بالسكرول*/
+    z-index: 999; /*mkach 7aja tgheti 3lih yeg3od howa li yban mlfog wl content li te7t yweli te7teh*/
+    display: flex;
+    justify-content: space-between; /*ydir espace bin les tags li kaynin fl header exmpl <a> ydirha flimna <div> flisra*/
+    align-items: center; /*ndirhom fl nos 3amodiyen*/
+    padding: 10px 100px; /*tdirli l'espace 10 px ta3 top wel botton 200px ta3 left wel right*/
+}
+.logo{
+    text-decoration: none; /*hadi li tegle3elna lkhet li te7t Lahcene fl header*/
+    color: #3a6cf4;
+    text-transform: uppercase; /*lketba tweli majuscule*/
+    font-weight: 700;/*tgheled lketba*/
+    font-size: 1.8em; /*tkeber l7ejm ta3 lketba 1.8(em) = 1.8*16(px) nekhedmo bl em khir bach yesra tanasso9 */
+}
+.navigation a{ /*navigation lazem les valeurs ta3ha tkon sghira 3la logo*/
+    color: #3a6cf4;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 700;
+    margin: -120px; /*les éléments haka ygerbou*/
+    padding-right: 300px; /*tdir espace mel left*/ 
+}
+.navigation a:hover{ /* ki tji fogha yetbadel l coleur*/
+    color: #601cfc;
+}
+
+section{
+    padding: 100px 50px; /*kebret w gedmet lel la droite*/
+}
+.main{
+    width: 100%;
+    min-height: 100vh; /*min-height: ; bsh 9ader kon les fils tawe3ha yzido gl 7ejm 3la 100 le père (main) tani yzid , vh te3ni view port wli hiya lview li rani nchof fiha w ana 7al le site ta3i tkon m3amra el itar ta3ha */
+    display: flex;
+    align-items: center; /*lmain rah flwest verticalyعموديا*/
+    background: url(images/lahcenportfolionight2.gif) no-repeat;/*bach teswira matet3awedch*/
+    background-size: cover;/*tgheti ga3 lmissa7a*/
+    background-position: center;
+    background-attachment: fixed; /*ki thewed b scroll lbackground mayhewedch*/
+}
+.main h2{
+    color: #fff;
+    font-size: 1.4em;
+    font-weight: 500;
+}
+.main h2 span{
+    display: inline-block; /*lazem ndiro hadi bach nekhedmo bel margin bla biha matekhdemch*/
+     margin-top: 10px; /*bach ndiro l'espace lfog*/
+    color: #4e9eff;
+     font-size: 3em;
+     font-weight: 600;
+}
+.main h3{
+    color: #fff;
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: 1px;/*lmissa7a li rani baghiha bin l7orof*/
+    margin-top: 10px;/*hna machi lazem ndiro  display: inline-block; psq h3 inline element machi kima span*/
+    margin-bottom: 30px;/*espace mete7t*/
+}
+.main-btn{
+    color: #fff;
+    background-color: #3a6cf4;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 600;
+    display: inline-block;
+    padding: 0.9375em 2.1875em; /*espace zad w zadet m3aha lbackground*/
+    letter-spacing: 1px;
+    border-radius: 15px; /*fl 9ent ta3 le carré yweli dayer*/
+    margin-bottom: 40px;
+    transition: 0.7s ease; /*hadi main-btn ki yet7arek yet7arek ghi bechwiya*/
+}
+
+.main-btn:hover { /*ye3ni ki tew9ef fogeha cha yesra*/
+     background-color: #0a49f6; /*ybadel lcouleur ta3eh*/
+     transform: scale(1.1);/*yekber b 1.1 7awali 10%*/
+}
+
+.social-icones a{
+    color: #fff;
+    font-size: 1.7em;
+    padding-right: 30px;
+}
+.title{
+    display: flex; /*hadi lazem tendar tekhdem m3a te7taniya débloki ltag*/
+    justify-content: center; /*hadi tekhdem ofo9iyen align-items tekhdem 3amodiyen*/
+     color: #3a6cf4;
+     font-size: 2.2em;
+     font-weight: 800;
+     margin-bottom: 30px;
+
+}
+.content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row; /*row cvd les élements ta3 content yjo wahed 7da wahed machi kima column wahed te7t wahed  */ 
+    flex-wrap: wrap; /*kon mandirhach ctd no wrap ctd les cartes(cards) li ncréyihom kon nzid card lmissa7a ta3 the cards tesghar w mayhowedch te7t bsh flex-wrap: wrap; l7ejm yeg3od ghi howa w ki may9edch lblas yhawed te7t */
+    
+}
+
+
+.card{
+    background-color: #fff;
+    width: 21.25em;
+    box-shadow: 0 5px 25px rgba(1 1 1 /15%);/*box-shadow: la valeur01 : rak baghi eldel yji lfog wla te7t
+                                           val02: yla rak baghi eldel yji 3la lisra dir num bel moins - yla baghi limna dir bel plus + 
+                                           val03: concentration lkatafa ta3 eldel chhal
+                                           val 04: les 3 khanat lwala ymetel lcouleur ta3 shadow / khana talya ta3 opacity of the shadow yla hafi wla ghame9;*/
+    border-radius: 10px;  
+    padding: 25px;  /*padding tdir missa7a fl element lui même*/
+    margin: 15px; /*tdir missa7a bin elements*/
+    transition: 0.7s ease;
+}
+.card:hover{
+    transform: scale(1.1);
+}
+
+.icon{ /*hta tl9a l icon fdak site ki ndekhel cnx nchllh*/
+    color: #3a6cf4;
+    font-size: 8em;
+    text-align: center;
+}
+.info{
+    text-align: center;
+}
+.info h3{
+    color: #3a6cf4;
+    font-size: 1.2em;
+    font-weight: 700;
+    margin: 10px;
+}
+
+.projects{
+    background-color: #000016;
+
+}
+.projects .content{ /*hna dert 9bel content projects bach n7eded bli rani 3la content li dakhla projects machi li rahi lfog li dakhla fl cards bach mayetkheltoch */
+margin-top: 30px;
+}
+
+.project-card{
+    background-color: #fff;
+    border: 1px solid #fff;
+    min-height: 14em;
+    width: 23em;
+    overflow: hidden; /*tekhdem m3a l9ent*/
+    border-radius: 10px;
+    margin: 20px;
+    transition: 0.7s ease;
+}
+.project-card:hover{
+    transform: scale(1.1);
+}
+.project-card:hover .project-image{
+    opacity: 0.9;
+}
+.project-image img {
+    width: 100%; 
+}
+
+.project-info {
+    padding: 1em;
+}
+.project-category{
+    font-size: 0.8em;
+    color: black;
+}
+.project-title{
+    display: flex;
+    justify-content: space-between; /*tefri9 bin les élement wehda tejbedha flimna ga3 wlokhra a9sa elyassar*/
+    text-transform: uppercase; /*capital letter*/
+    font-weight: 800;
+    margin-top: 10px;
+}
+.more-details{
+    text-decoration: none;
+    color: #3a6cf4;
+}
+.more-details:hover{
+color: #601cfc;
+}
+.contact .icon{
+    font-size: 4.5em;/*nseghroha*/
+
+}
+
+.contact .info .h3{
+    color: #000;
+}
+.contact .info .p{
+    font-size: 1.5em;
+}
+
+.footer{
+     background-color: #000016;  
+     color: #fff;
+    padding: 2em;
+    display: flex; /*derna lketba fl center 3amodiyen*/
+    justify-content: space-between;
+    
+}
+
+
+.footer-title{
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+.footer-title span{
+    color: #3a6cf4;
+}
+
+.footer .social-icones a{
+    font-size: 1.3em;
+    padding: 0 12px 0 0;/*top right bottom left*/
+}
+@media (max-w: 1023px){ /*hadi tdirha bach site ta3k yweli yemchi m3a ga3 devices li tkon sghira 3la 1023px ctd ga3 ela7jam*/
+header{
+    padding: 12px 20px;
+}
+.navigation a{
+    padding-left: 30px;
+}
+.title {
+    font-size: 1.8em;
+}
+section{
+    padding: 80px 20px;
+}
+.main-content h2 {
+    font-size: 1em;
+}
+.main-content h3 {
+    font-size: 1.6em;
+}
+.content{
+    flex-direction: column;
+    align-items: center;
+}
+}
+@media (max-w:641px) {
+    body{
+        font-size: 12px; /*me3naha ay 1em=12px kol 7aja tesghar binefs elmi9dar matdelich tbedel kol élement lwe7deh psq lfog kan 1em=16px drwk ki egherna la valeur ta3 em tsama l7ejm yesghar fl devices 9el men 641 px*/
+    }
+    .main-content h2{
+        font-size: 0.8em;
+    }
+    .main-content h3{
+        font-size: 0.4em;
+    }
+}
+@media (max-w:300px) {
+    body{
+        font-size: 10px;
+        
+    }
+}
